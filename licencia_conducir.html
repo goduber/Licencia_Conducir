@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Licencia de Conducir</title>
+</head>
+<body>
+    <script>
+        function saltarlinea() {
+            document.write("<br>");
+        }
+
+        function imprimir(texto) {
+            document.write(texto);
+            saltarlinea();
+        }
+
+        var edad = parseInt(prompt("¿Que Edad Tiene?"));
+        var tieneLicencia = prompt("¿Tiene Licencia de Conducir?(s/n)");
+
+        if (edad >= 18) {
+            if (tieneLicencia.toUpperCase() == "S") {
+                imprimir("Puedes Conducir");
+            }
+            else {
+                imprimir("No puedes Conducir");
+            }
+        }
+        else {
+            imprimir("No puedes Conducir");
+        }
+    </script>
+</body>
+</html>
